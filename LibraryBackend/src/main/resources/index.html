@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <title>
+        Simple Library Application
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<script src="script.js"></script>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Book Title*</label><label class="validation-error hide" id="mandatoryError">This field is required.</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div>
+                        <label>Author*</label><label class="validation-error hide" id="mandatoryError">This field is required.</label>
+                        <input type="text" name="author" id="author">
+                    </div>
+                    <div>
+                        <label>Genre*</label><label class="validation-error hide" id="mandatoryError">This field is required.</label>
+                        <input type="text" name="genre" id="genre">
+                    </div>
+                    <div>
+                        <label>Status</label>
+                        <input type="text" name="status" id="status">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="books">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
